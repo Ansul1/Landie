@@ -1,0 +1,294 @@
+@import 'text';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Roboto;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+
+  button:hover {
+    @include buttonHover;
+  }
+}
+
+// ---------Navbar
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+
+  h1 {
+    color: #37447e;
+    font-weight: 900;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      color: #505f98;
+      font-weight: 500;
+      list-style: none;
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding-left: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .buy-now-btn {
+    @include buttonStyle;
+    padding: 5px 4rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+//---------Home page
+#home {
+  height: 100vh;
+  position: relative;
+
+  .introduction {
+    left: 8%;
+    position: absolute;
+    top: 12%;
+
+    h1 {
+      color: #141719;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 45px;
+      letter-spacing: 1px;
+      padding-bottom: 1.2rem;
+    }
+
+    p {
+      @include paragraph;
+      color: #505f98;
+    }
+
+    .purchase-btn,
+    .more-btn {
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 5px 2.6rem;
+      transition: 0.3s;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .purchase-btn {
+      background-color: #111b47;
+      border: 2px solid transparent;
+      color: #ffffff;
+    }
+
+    .more-btn {
+      background-color: transparent;
+      border: 2px solid #141719;
+      color: #141719;
+      margin-left: 1.4rem;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: -2.3rem;
+    transform: scale(0.9);
+    top: -7rem;
+    z-index: -1;
+  }
+}
+
+// ------------Features section
+#features {
+  padding-top: 3.2rem;
+}
+
+.feature-description {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+
+  .feature-info {
+    max-width: 600px;
+
+    h1 {
+      @include heading;
+    }
+
+    p {
+      @include paragraph;
+    }
+  }
+
+  .feature-box {
+    display: flex;
+    padding-top: 2rem;
+
+    div {
+      padding-right: 5px;
+
+      h3 {
+        padding: 8px 0;
+      }
+    }
+  }
+}
+
+.individual-feature {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 5rem;
+
+  h1 {
+    @include heading;
+  }
+
+  p {
+    @include paragraph;
+    padding-bottom: 10px;
+  }
+
+  button {
+    @include buttonStyle;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// ---------------------------Price section
+#pricing {
+  align-items: center;
+  background: url('../img/wave.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 10rem;
+
+  h1 {
+    @include heading;
+    padding: 12rem 0 1rem 0;
+  }
+
+  p {
+    @include paragraph;
+    text-align: center;
+  }
+
+  .price {
+    padding: 3.5rem 0;
+
+    h2 {
+      color: #222f65;
+      font-size: 3.1rem;
+    }
+
+    p {
+      color: #37447e;
+    }
+  }
+
+  button {
+    @include buttonStyle;
+    padding: 10px 4rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// --------Footer
+footer {
+  background-color: #e7ecff;
+
+  .brand {
+    align-items: center;
+    border-bottom: 1px solid #cdd1d4;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 13rem;
+    padding: 3rem 0rem;
+
+    h1 {
+      color: #37447e;
+    }
+
+    p {
+      color: #939ea4;
+    }
+
+    button {
+      @include buttonStyle;
+      padding: 8px 2rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .link {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 13rem;
+
+    .navlinks {
+      display: flex;
+      li {
+        color: #505f98;
+        font-weight: 500;
+        list-style: none;
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          padding-left: 2rem;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    img {
+      padding-left: 10px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      filter: brightness(50%);
+      transition: 0.2s;
+    }
+  }
+}

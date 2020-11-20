@@ -1,0 +1,30 @@
+@mixin heading {
+  color: #091133;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+@mixin paragraph {
+  color: #6f7cb2;
+  line-height: 28px;
+  max-width: 600px;
+  padding-bottom: 1rem;
+}
+
+@mixin buttonStyle {
+  border: none;
+  border-radius: 2px;
+  background-color: #111b47;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 10px 2.6rem;
+  transition: 0.3s;
+}
+
+@mixin buttonHover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+  box-shadow: 0 18px 20px -10px #111b474f;
+}
