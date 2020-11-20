@@ -1,4 +1,4 @@
-@import 'text';
+@use 'text';
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
   position: relative;
 
   button:hover {
-    @include buttonHover;
+    @include text.buttonHover;
   }
 }
 
@@ -52,7 +52,7 @@ nav {
   }
 
   .buy-now-btn {
-    @include buttonStyle;
+    @include text.buttonStyle;
     padding: 5px 4rem;
 
     &:focus {
@@ -81,7 +81,7 @@ nav {
     }
 
     p {
-      @include paragraph;
+      @include text.paragraph;
       color: #505f98;
     }
 
@@ -137,11 +137,11 @@ nav {
     max-width: 600px;
 
     h1 {
-      @include heading;
+      @include text.heading;
     }
 
     p {
-      @include paragraph;
+      @include text.paragraph;
     }
   }
 
@@ -166,16 +166,16 @@ nav {
   padding: 6rem 5rem;
 
   h1 {
-    @include heading;
+    @include text.heading;
   }
 
   p {
-    @include paragraph;
+    @include text.paragraph;
     padding-bottom: 10px;
   }
 
   button {
-    @include buttonStyle;
+    @include text.buttonStyle;
 
     &:focus {
       outline: none;
@@ -195,12 +195,12 @@ nav {
   padding-bottom: 10rem;
 
   h1 {
-    @include heading;
+    @include text.heading;
     padding: 12rem 0 1rem 0;
   }
 
   p {
-    @include paragraph;
+    @include text.paragraph;
     text-align: center;
   }
 
@@ -218,7 +218,7 @@ nav {
   }
 
   button {
-    @include buttonStyle;
+    @include text.buttonStyle;
     padding: 10px 4rem;
 
     &:focus {
@@ -248,7 +248,7 @@ footer {
     }
 
     button {
-      @include buttonStyle;
+      @include text.buttonStyle;
       padding: 8px 2rem;
 
       &:focus {
