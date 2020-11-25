@@ -24,8 +24,8 @@ nav {
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: space-between;
+  padding: 1rem 8.6rem;
 
   h1 {
     color: #37447e;
@@ -67,7 +67,7 @@ nav {
   position: relative;
 
   .introduction {
-    left: 8%;
+    left: 9%;
     position: absolute;
     top: 12%;
 

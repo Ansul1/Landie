@@ -22,8 +22,8 @@ nav {
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: space-between;
+  padding: 1rem 8.6rem;
 }
 nav h1 {
   color: #37447e;
@@ -64,7 +64,7 @@ nav .buy-now-btn:focus {
   position: relative;
 }
 #home .introduction {
-  left: 8%;
+  left: 9%;
   position: absolute;
   top: 12%;
 }
