@@ -26,7 +26,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 8.6rem;
-  background-color: aquamarine;
 
   h1 {
     color: #37447e;
@@ -48,6 +47,10 @@ nav {
 
       a {
         text-decoration: none;
+
+        &:focus {
+          color: black;
+        }
       }
     }
   }
