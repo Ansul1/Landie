@@ -11,6 +11,8 @@ html {
 
 body {
   position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body button:hover {
   transform: translateY(-6px);
@@ -18,35 +20,38 @@ body button:hover {
   box-shadow: 0 18px 22px -10px #111b474f;
 }
 
-nav {
+header {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 8.6rem;
 }
-nav h1 {
+header .brand {
   color: #37447e;
+  font-size: 26px;
   font-weight: 900;
+  text-decoration: none;
 }
-nav ul {
+header ul {
   display: flex;
 }
-nav ul li {
-  color: #505f98;
+header ul li {
   font-weight: 500;
   list-style: none;
 }
-nav ul li:nth-child(2), nav ul li:nth-child(3) {
+header ul li:nth-child(2), header ul li:nth-child(3) {
   padding-left: 2rem;
 }
-nav ul li a {
+header ul li a {
+  color: #505f98;
   text-decoration: none;
+  font-size: 14px;
 }
-nav ul li a:focus {
+header ul li a:focus {
   color: black;
 }
-nav .buy-now-btn {
+header .buy-now-btn {
   border: none;
   border-radius: 2px;
   background-color: #111b47;
@@ -56,10 +61,13 @@ nav .buy-now-btn {
   margin-top: 1rem;
   padding: 10px 2.6rem;
   transition: 0.3s;
+  font-size: 12px;
+  height: 26px;
   margin-top: 0;
-  padding: 5px 4rem;
+  padding: 0;
+  width: 160px;
 }
-nav .buy-now-btn:focus {
+header .buy-now-btn:focus {
   outline: none;
 }
 
@@ -74,27 +82,32 @@ nav .buy-now-btn:focus {
 }
 #home .introduction h1 {
   color: #141719;
-  font-size: 2rem;
+  font-size: 50px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 66px;
   letter-spacing: 1px;
   padding-bottom: 1.2rem;
 }
 #home .introduction p {
   color: #6f7cb2;
-  line-height: 28px;
+  line-height: 26px;
   max-width: 600px;
   padding-bottom: 1rem;
   color: #505f98;
+  font-size: 18px;
+  line-height: 30px;
 }
 #home .introduction .purchase-btn,
 #home .introduction .more-btn {
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  font-size: 16px;
   font-weight: 500;
-  padding: 5px 2.6rem;
+  height: 36px;
+  padding: 0;
   transition: 0.3s;
+  width: 189.13px;
 }
 #home .introduction:focus {
   outline: none;
@@ -131,14 +144,15 @@ nav .buy-now-btn:focus {
 .feature-description .feature-info {
   max-width: 600px;
 }
-.feature-description .feature-info h1 {
+.feature-description .feature-info h2 {
   color: #091133;
-  font-size: 2rem;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 1rem;
 }
 .feature-description .feature-info p {
   color: #6f7cb2;
-  line-height: 28px;
+  line-height: 26px;
   max-width: 600px;
   padding-bottom: 1rem;
 }
@@ -150,7 +164,16 @@ nav .buy-now-btn:focus {
   padding-right: 5px;
 }
 .feature-description .feature-box div h3 {
+  line-height: 26px;
   padding: 8px 0;
+}
+.feature-description .feature-box div p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.feature-description .feature-box div img {
+  height: 36px;
+  width: 36px;
 }
 
 .individual-feature {
@@ -159,14 +182,15 @@ nav .buy-now-btn:focus {
   justify-content: space-around;
   padding: 6rem 5rem;
 }
-.individual-feature h1 {
+.individual-feature h2 {
   color: #091133;
-  font-size: 2rem;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 1rem;
 }
 .individual-feature p {
   color: #6f7cb2;
-  line-height: 28px;
+  line-height: 26px;
   max-width: 600px;
   padding-bottom: 1rem;
   padding-bottom: 10px;
@@ -181,6 +205,10 @@ nav .buy-now-btn:focus {
   margin-top: 1rem;
   padding: 10px 2.6rem;
   transition: 0.3s;
+  font-size: 14px;
+  height: 32px;
+  padding: 0;
+  width: 150px;
 }
 .individual-feature button:focus {
   outline: none;
@@ -194,30 +222,39 @@ nav .buy-now-btn:focus {
   flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
-  padding-bottom: 10rem;
+  padding-bottom: 11rem;
 }
-#pricing h1 {
+#pricing .pricing-heading {
   color: #091133;
-  font-size: 2rem;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 1rem;
-  padding: 12rem 0 1rem 0;
+  padding: 13rem 0 1rem 0;
 }
-#pricing p {
+#pricing .pricing-info {
   color: #6f7cb2;
-  line-height: 28px;
+  line-height: 26px;
   max-width: 600px;
   padding-bottom: 1rem;
   text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 0;
 }
 #pricing .price {
   padding: 3.5rem 0;
 }
 #pricing .price h2 {
   color: #222f65;
-  font-size: 3.1rem;
+  font-size: 50px;
+  line-height: 66px;
 }
 #pricing .price p {
   color: #37447e;
+  line-height: 26px;
+}
+#pricing .price-type {
+  font-size: 14px;
 }
 #pricing button {
   border: none;
@@ -229,7 +266,10 @@ nav .buy-now-btn:focus {
   margin-top: 1rem;
   padding: 10px 2.6rem;
   transition: 0.3s;
-  padding: 10px 4rem;
+  font-size: 14px;
+  height: 31.81px;
+  padding: 0;
+  width: 189px;
 }
 #pricing button:focus {
   outline: none;
@@ -246,11 +286,16 @@ footer .brand {
   margin: 0 13rem;
   padding: 3rem 0rem;
 }
-footer .brand h1 {
-  color: #37447e;
-}
 footer .brand p {
   color: #939ea4;
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .brand a {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 38px;
+  text-decoration: none;
 }
 footer .brand button {
   border: none;
@@ -262,7 +307,11 @@ footer .brand button {
   margin-top: 1rem;
   padding: 10px 2.6rem;
   transition: 0.3s;
-  padding: 8px 2rem;
+  font-size: 12px;
+  height: 26px;
+  line-height: 18px;
+  padding: 0;
+  width: 109px;
 }
 footer .brand button:focus {
   outline: none;
@@ -279,6 +328,8 @@ footer .link .navlinks {
 footer .link .navlinks li {
   color: #505f98;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
   list-style: none;
 }
 footer .link .navlinks li:nth-child(2), footer .link .navlinks li:nth-child(3) {
@@ -286,9 +337,10 @@ footer .link .navlinks li:nth-child(2), footer .link .navlinks li:nth-child(3) {
 }
 footer .link .navlinks li a {
   text-decoration: none;
+  color: #929ecc;
 }
 footer .link img {
-  padding-left: 10px;
+  padding-left: 25px;
   cursor: pointer;
 }
 footer .link img:hover {

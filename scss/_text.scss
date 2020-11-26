@@ -1,12 +1,13 @@
 @mixin heading {
   color: #091133;
-  font-size: 2rem;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 1rem;
 }
 
 @mixin paragraph {
   color: #6f7cb2;
-  line-height: 28px;
+  line-height: 26px;
   max-width: 600px;
   padding-bottom: 1rem;
 }
