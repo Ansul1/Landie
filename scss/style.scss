@@ -134,7 +134,7 @@ header {
   img {
     position: absolute;
     right: -2.3rem;
-    transform: scale(0.9);
+    transform: scale(0.7);
     top: -7rem;
     z-index: -1;
   }
@@ -182,7 +182,7 @@ header {
 
       img {
         height: 36px;
-        width: 36px;
+        width: 255px;
       }
     }
   }
@@ -219,7 +219,7 @@ header {
 // ---------------------------Price section
 #pricing {
   align-items: center;
-  background: url('../img/wave.png');
+  background: url('../img/wave.svg');
   background-size: cover;
   display: flex;
   flex-direction: column;
